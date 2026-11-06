@@ -1,0 +1,773 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>CampusCode</title>
+    <link href="./Event.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../Main/Assets/image-2.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <div class="student-panel">
+        <div class="student-bg-grid"></div>
+        <div class="student-bg-orb one"></div>
+        <div class="student-bg-orb two"></div>
+        <div class="student-mobile-topbar">
+          <button class="student-menu-button">☰</button>
+          <div class="student-mobile-brand">
+            <span aria-label="CampusCode logo" class="cc-mark cc-mark-small">
+              <span> </span>
+              <span> </span>
+              <span> </span>
+            </span>
+            <div>
+              <strong> CAMPUSCODE </strong>
+              <span> HACKATHON ARENA </span>
+            </div>
+          </div>
+          <div class="student-mobile-avatar">KP</div>
+        </div>
+        <aside class="student-sidebar">
+          <button aria-label="Close sidebar" class="student-sidebar-close">
+            &lsaquo;
+          </button>
+          <div class="student-brand">
+            <span aria-label="CampusCode logo" class="cc-mark">
+              <span> </span>
+              <span> </span>
+              <span> </span>
+            </span>
+            <div>
+              <strong> CAMPUSCODE </strong>
+              <span> HACKATHON ARENA </span>
+            </div>
+          </div>
+          <div class="sidebar-label">WORKSPACE</div>
+          <nav class="student-nav">
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-layout-dashboard"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect height="9" rx="1" width="7" x="3" y="3"></rect>
+                  <rect height="5" rx="1" width="7" x="14" y="3"></rect>
+                  <rect height="9" rx="1" width="7" x="14" y="12"></rect>
+                  <rect height="5" rx="1" width="7" x="3" y="16"></rect>
+                </svg>
+              </span>
+              <span> Overview </span>
+            </button>
+            <button class="student-nav-item active" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-trophy"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2"></path>
+                  <path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2"></path>
+                  <path
+                    d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3"
+                  ></path>
+                  <path d="M4 22h16"></path>
+                  <path
+                    d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"
+                  ></path>
+                  <path
+                    d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3"
+                  ></path>
+                </svg>
+              </span>
+              <span> Events </span>
+              <b> &rarr; </b>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-clock3 lucide-clock-3"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 6v6h4"></path>
+                </svg>
+              </span>
+              <span> My Events </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-sparkles"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
+                  ></path>
+                  <path d="M20 2v4"></path>
+                  <path d="M22 4h-4"></path>
+                  <circle cx="4" cy="20" r="2"></circle>
+                </svg>
+              </span>
+              <span> HackMate AI </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-sparkles"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
+                  ></path>
+                  <path d="M20 2v4"></path>
+                  <path d="M22 4h-4"></path>
+                  <circle cx="4" cy="20" r="2"></circle>
+                </svg>
+              </span>
+              <span> IdeaCheck AI </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-award"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                  ></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+                </svg>
+              </span>
+              <span> Certificates </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-id-card"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M16 10h2"></path>
+                  <path d="M16 14h2"></path>
+                  <path d="M6.17 15a3 3 0 0 1 5.66 0"></path>
+                  <circle cx="9" cy="11" r="2"></circle>
+                  <rect height="14" rx="2" width="20" x="2" y="5"></rect>
+                </svg>
+              </span>
+              <span> Digital Card </span>
+            </button>
+            <button class="student-nav-item rulebot-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bot"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 8V4H8"></path>
+                  <rect height="12" rx="2" width="16" x="4" y="8"></rect>
+                  <path d="M2 14h2"></path>
+                  <path d="M20 14h2"></path>
+                  <path d="M15 13v2"></path>
+                  <path d="M9 13v2"></path>
+                </svg>
+              </span>
+              <span> RuleBot AI </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bot"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 8V4H8"></path>
+                  <rect height="12" rx="2" width="16" x="4" y="8"></rect>
+                  <path d="M2 14h2"></path>
+                  <path d="M20 14h2"></path>
+                  <path d="M15 13v2"></path>
+                  <path d="M9 13v2"></path>
+                </svg>
+              </span>
+              <span> Student Guide </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bell"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                  <path
+                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                  ></path>
+                </svg>
+              </span>
+              <span> Official Communication </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bell"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                  <path
+                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                  ></path>
+                </svg>
+              </span>
+              <span> Notifications </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bot"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 8V4H8"></path>
+                  <rect height="12" rx="2" width="16" x="4" y="8"></rect>
+                  <path d="M2 14h2"></path>
+                  <path d="M20 14h2"></path>
+                  <path d="M15 13v2"></path>
+                  <path d="M9 13v2"></path>
+                </svg>
+              </span>
+              <span> Help &amp; Support </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-user"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="10" r="3"></circle>
+                  <path
+                    d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"
+                  ></path>
+                </svg>
+              </span>
+              <span> Profile </span>
+            </button>
+          </nav>
+          <div class="student-sidebar-bottom">
+            <div class="sidebar-label">ACCOUNT</div>
+            <div class="sidebar-user">
+              <div>KP</div>
+              <span>
+                <strong> Kundan Patil </strong>
+                <small> STUDENT </small>
+              </span>
+            </div>
+            <button class="logout-btn" type="button">
+              <span> &rarrhk; </span>
+              LOG OUT
+            </button>
+          </div>
+        </aside>
+        <main class="student-main">
+          <header class="student-topbar">
+            <div>
+              <span> CAMPUSCODE / STUDENT </span>
+              <strong> EVENTS </strong>
+            </div>
+            <div class="student-top-actions">
+              <button
+                aria-label="Open notifications"
+                class="student-top-notification"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bell"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                  <path
+                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                  ></path>
+                </svg>
+                <i> </i>
+              </button>
+              <button
+                aria-label="Refresh current page"
+                class="campus-refresh-button"
+                title="Refresh current page"
+                type="button"
+              >
+                <span class="campus-refresh-icon-wrap">
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-refresh-cw campus-refresh-icon"
+                    fill="none"
+                    height="16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.9"
+                    viewbox="0 0 24 24"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"
+                    ></path>
+                    <path d="M21 3v5h-5"></path>
+                    <path
+                      d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"
+                    ></path>
+                    <path d="M8 16H3v5"></path>
+                  </svg>
+                </span>
+                <span class="campus-refresh-label"> REFRESH </span>
+              </button>
+              <div class="topbar-user">
+                <svg
+                  aria-hidden="true"
+                  class="student-avatar"
+                  height="34"
+                  viewbox="0 0 100 100"
+                  width="34"
+                >
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="46" fill="#e0ac69" r="26"></circle>
+                  <g>
+                    <path
+                      d="M22 36 Q24 10 50 10 Q76 10 78 36 Q60 24 50 30 Q40 24 22 36Z"
+                    ></path>
+                    <circle cx="50" cy="12" r="7"></circle>
+                  </g>
+                  <circle cx="41" cy="46" fill="#1c1c1c" r="3.4"></circle>
+                  <circle cx="59" cy="46" fill="#1c1c1c" r="3.4"></circle>
+                  <circle cx="42" cy="45" fill="#fff" r="1.1"></circle>
+                  <circle cx="60" cy="45" fill="#fff" r="1.1"></circle>
+                  <path
+                    d="M44 56 Q50 58 56 56"
+                    fill="none"
+                    stroke="#1c1c1c"
+                    stroke-linecap="round"
+                    stroke-width="2.4"
+                  ></path>
+                  <ellipse
+                    cx="35"
+                    cy="53"
+                    fill="#ff9d9d"
+                    opacity=".55"
+                    rx="4"
+                    ry="2.6"
+                  ></ellipse>
+                  <ellipse
+                    cx="65"
+                    cy="53"
+                    fill="#ff9d9d"
+                    opacity=".55"
+                    rx="4"
+                    ry="2.6"
+                  ></ellipse>
+                  <path
+                    d="M34 78 Q50 70 66 78 L64 100 L36 100Z"
+                    fill="#7c5cff"
+                  ></path>
+                </svg>
+                <span> Kundan Patil </span>
+              </div>
+            </div>
+          </header>
+          <div class="student-content">
+            <div class="student-view">
+              <section>
+                <div class="student-page-heading">
+                  <div>
+                    <span> DISCOVER / BACKEND DATA </span>
+                    <h1>EVENTS.</h1>
+                    <p>
+                      Explore CampusCode events &mdash; hackathons, quizzes,
+                      workshops &mdash; and join the ones you want.
+                    </p>
+                  </div>
+                  <div class="student-counter">
+                    <strong> 03 </strong>
+                    <span> LIVE DATA </span>
+                  </div>
+                </div>
+                <div
+                  aria-label="Filter events by type"
+                  class="event-hub-tabs"
+                  role="tablist"
+                >
+                  <button class="event-hub-tab active" type="button">
+                    All events
+                  </button>
+                  <button class="event-hub-tab" type="button">
+                    Hackathons
+                  </button>
+                  <button class="event-hub-tab" type="button">Quizzes</button>
+                </div>
+                <div class="hackathon-grid">
+                  <article class="hackathon-card">
+                    <div class="event-banner">
+                      <img
+                        alt="ReBuild '26 banner"
+                        class="event-banner-web"
+                        height="96"
+                        loading="lazy"
+                        src="../Main/Assets/image-1.png"
+                        width="330"
+                      />
+                      <img
+                        alt="ReBuild '26 banner"
+                        class="event-banner-mobile"
+                        height="0"
+                        loading="lazy"
+                        src="../Main/Assets/image-1.png"
+                        width="0"
+                      />
+                    </div>
+                    <div class="hackathon-card-top">
+                      <span> e2798ce3-a1b5-4806-9147-4d9f10c52ef1 </span>
+                      <b> LIVE </b>
+                    </div>
+                    <div class="hackathon-card-brand">
+                      <span
+                        aria-hidden="true"
+                        class="hack-mark"
+                        style="
+                          width: 54px;
+                          height: 54px;
+                          font-size: 18px;
+                          background: linear-gradient(
+                            135deg,
+                            rgb(167, 243, 122),
+                            rgb(76, 122, 18)
+                          );
+                        "
+                      >
+                        RE
+                      </span>
+                      <h2>ReBuild '26</h2>
+                    </div>
+                    <p>
+                      ReBuild '26 is an individual dashboard-recreation
+                      hackathon by CampusCode. You participate alone, but you
+                      must create a team name for tracking and use it on your
+                      Unstop registration, the CampusCode portal, and every
+                      submission. Round 1 (Friday, 6 Nov, morning to 10 PM):
+                      Recreate the CampusCode user flow faithfully &mdash;
+                      Dashboard, Login, Register, and Student dashboard &mdash;
+                      and submit your demo any time till 10 PM. Round 2
+                      (Saturday, 7 Nov, top performers from Round 1 only): Build
+                      a complete new UI in CampusCode's vibe. Frontend only,
+                      mock data is fine. No presentation round. Prizes: Winner
+                      certificate + CampusCode internship with ₹15,000 stipend,
+                      runner-up certificate, and participation certificates for
+                      all. Sunday, 8 Nov (Diwali) is free. This is a paid event
+                      (₹50 on Unstop). Paid students receive an invite code
+                      &mdash; enter it when you join this event on the portal.
+                    </p>
+                    <div class="hackathon-data">
+                      <span>
+                        <small> MODE </small>
+                        &mdash;
+                      </span>
+                      <span>
+                        <small> TEAM SIZE </small>
+                        Individual
+                      </span>
+                      <span>
+                        <small> START </small>
+                        Nov 06, 2026
+                      </span>
+                    </div>
+                    <div class="hackathon-actions">
+                      <button class="student-outline-btn">
+                        VIEW DETAILS
+                        <b> &nearrow; </b>
+                      </button>
+                      <button class="student-join-btn joined" disabled="">
+                        &checkmark; JOINED
+                      </button>
+                    </div>
+                  </article>
+                  <article class="hackathon-card">
+                    <div class="event-banner">
+                      <img
+                        alt="FirstCommit '26 Quiz Competition 2.0 banner"
+                        class="event-banner-web"
+                        height="96"
+                        loading="lazy"
+                        src="../Main/Assets/image-4.png"
+                        width="330"
+                      />
+                      <img
+                        alt="FirstCommit '26 Quiz Competition 2.0 banner"
+                        class="event-banner-mobile"
+                        height="0"
+                        loading="lazy"
+                        src="../Main/Assets/image-4.png"
+                        width="0"
+                      />
+                    </div>
+                    <div class="hackathon-card-top">
+                      <span> 20864c76-4792-4b09-a2e9-ff6764bf20d6 </span>
+                      <b> COMPLETED </b>
+                    </div>
+                    <div class="hackathon-card-brand">
+                      <span
+                        aria-hidden="true"
+                        class="hack-mark"
+                        style="
+                          width: 54px;
+                          height: 54px;
+                          font-size: 18px;
+                          background: linear-gradient(
+                            135deg,
+                            rgb(167, 243, 122),
+                            rgb(76, 122, 18)
+                          );
+                        "
+                      >
+                        FQ
+                      </span>
+                      <h2>FirstCommit '26 Quiz Competition 2.0</h2>
+                    </div>
+                    <p>
+                      <strong> QUIZ &middot; SOLO &middot; TIMED </strong>
+                    </p>
+                    <p>This is the reattempt quiz those who missed</p>
+                    <div class="hackathon-data">
+                      <span>
+                        <small> MODE </small>
+                        &mdash;
+                      </span>
+                      <span>
+                        <small> FORMAT </small>
+                        Solo
+                      </span>
+                      <span>
+                        <small> START </small>
+                        &mdash;
+                      </span>
+                    </div>
+                    <div class="hackathon-actions">
+                      <button class="student-outline-btn">
+                        VIEW DETAILS
+                        <b> &nearrow; </b>
+                      </button>
+                      <button class="student-join-btn">
+                        REGISTER FOR QUIZ &nearrow;
+                      </button>
+                    </div>
+                  </article>
+                  <article class="hackathon-card">
+                    <div class="event-banner">
+                      <img
+                        alt="FirstCommit '26 Quiz Competition banner"
+                        class="event-banner-web"
+                        height="96"
+                        loading="lazy"
+                        src="../Main/Assets/image-4.png"
+                        width="330"
+                      />
+                      <img
+                        alt="FirstCommit '26 Quiz Competition banner"
+                        class="event-banner-mobile"
+                        height="0"
+                        loading="lazy"
+                        src="../Main/Assets/image-4.png"
+                        width="0"
+                      />
+                    </div>
+                    <div class="hackathon-card-top">
+                      <span> 80299fc1-3e30-466f-a146-fd45c77c84be </span>
+                      <b> COMPLETED </b>
+                    </div>
+                    <div class="hackathon-card-brand">
+                      <span
+                        aria-hidden="true"
+                        class="hack-mark"
+                        style="
+                          width: 54px;
+                          height: 54px;
+                          font-size: 18px;
+                          background: linear-gradient(
+                            135deg,
+                            rgb(20, 20, 20),
+                            rgb(74, 74, 74)
+                          );
+                        "
+                      >
+                        FQ
+                      </span>
+                      <h2>FirstCommit '26 Quiz Competition</h2>
+                    </div>
+                    <p>
+                      <strong> QUIZ &middot; SOLO &middot; TIMED </strong>
+                    </p>
+                    <p>
+                      The quiz features 50 questions across technology, AI, and
+                      engineering &mdash; 42 multiple-choice questions and 8
+                      true/false questions &mdash; to be completed in 30 minutes
+                      on Sunday, 1 November 2026. It is conducted online on the
+                      CampusCode platform, and every participant gets a single
+                      attempt.
+                    </p>
+                    <div class="hackathon-data">
+                      <span>
+                        <small> MODE </small>
+                        &mdash;
+                      </span>
+                      <span>
+                        <small> FORMAT </small>
+                        Solo
+                      </span>
+                      <span>
+                        <small> START </small>
+                        &mdash;
+                      </span>
+                    </div>
+                    <div class="hackathon-actions">
+                      <button class="student-outline-btn">
+                        VIEW DETAILS
+                        <b> &nearrow; </b>
+                      </button>
+                      <button class="student-join-btn">
+                        REGISTER FOR QUIZ &nearrow;
+                      </button>
+                    </div>
+                  </article>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

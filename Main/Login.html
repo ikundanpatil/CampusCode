@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusCode - Login</title>
+    <link rel="stylesheet" href="./CSS/Login.css" />
+    <link
+      rel="shortcut icon"
+      href="../Main/Assets/image-2.svg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <div class="Main">
+      <!-- Background Elements -->
+      <div class="login-grid"></div>
+      <div class="glow glow-one"></div>
+      <div class="glow glow-two"></div>
+
+      <!-- Moving Object in Screen at purple color -->
+
+      <div class="login-network" aria-hidden="true">
+        <svg viewBox="0 0 1400 800" preserveAspectRatio="none">
+          <path
+            d="M0 600 C180 450 250 620 420 430 S680 80 900 270 S1150 500 1400 180"
+          ></path>
+          <path
+            d="M80 130 C280 300 380 80 570 270 S800 620 1080 500 S1250 400 1400 620"
+          ></path>
+          <path d="M250 800 C400 600 570 650 720 460 S970 180 1160 80"></path>
+
+          <circle cx="420" cy="430" r="4"></circle>
+          <circle cx="900" cy="270" r="4"></circle>
+          <circle cx="1080" cy="500" r="4"></circle>
+          <circle cx="570" cy="270" r="4"></circle>
+          <circle cx="1160" cy="80" r="4"></circle>
+        </svg>
+      </div>
+
+      <!-- Navbar -->
+      <header class="header-nav">
+        <button type="button" class="logo">
+          <span class="logo-mark">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="logo-info">
+            <strong class="logo-name">CAMPUSCODE</strong>
+            <small class="logo-tagline">HACKATHON ARENA</small>
+          </span>
+        </button>
+
+        <a href="./Main.html">
+          <button class="login-back" type="button">← BACK TO HOME</button></a
+        >
+      </header>
+
+      <!-- Main Section -->
+      <main class="login-main">
+        <!-- Left Introduction Section -->
+        <section class="login-intro">
+          <div class="login-status">
+            <span></span>
+            CAMPUSCODE / AUTHENTICATION
+          </div>
+
+          <div class="login-intro-index">
+            <span>ACCESS</span>
+            <span>01 / 02</span>
+          </div>
+
+          <h1>
+            ENTER<br />
+            THE<br />
+            <span>ARENA.</span>
+          </h1>
+
+          <p class="login-intro-description">
+            Sign in to continue building, collaborating and competing with the
+            CampusCode community.
+          </p>
+
+          <div class="login-features">
+            <div>
+              <strong>01</strong>
+              <span>BUILD</span>
+            </div>
+
+            <div>
+              <strong>02</strong>
+              <span>COMPETE</span>
+            </div>
+
+            <div>
+              <strong>03</strong>
+              <span>SHIP</span>
+            </div>
+          </div>
+
+          <div class="login-system-info">
+            <span>AUTHENTICATION READY</span>
+            <span>SECURE ACCESS</span>
+            <span>2026</span>
+          </div>
+        </section>
+
+        <!-- Right Login Card -->
+        <section class="left-section">
+          <div class="login-card">
+            <div class="login-card-top">
+              <div>
+                <span class="login-card-label"> EXISTING ACCOUNT </span>
+
+                <h2>LOGIN</h2>
+
+                <p>Access your CampusCode account.</p>
+              </div>
+
+              <div class="login-card-index">CC<br />01</div>
+            </div>
+
+            <div class="login-divider"></div>
+
+            <!-- Login Form -->
+            <form>
+              <!-- Email -->
+              <div class="login-field">
+                <label for="login-email"> EMAIL ADDRESS </label>
+
+                <div class="login-input-wrap">
+                  <span class="login-input-icon">@</span>
+
+                  <input
+                    type="email"
+                    id="login-email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <!-- Password -->
+              <div class="login-field">
+                <label for="login-password"> PASSWORD </label>
+
+                <div class="login-input-wrap">
+                  <span class="login-input-icon">•</span>
+
+                  <input
+                    type="password"
+                    id="login-password"
+                    name="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                  />
+
+                  <button type="button" class="login-password-toggle">
+                    SHOW
+                  </button>
+                </div>
+              </div>
+
+              <!-- CAPTCHA -->
+              <div class="login-field">
+                <label for="login-captcha"> CAPTCHA </label>
+
+                <div class="login-captcha-row">
+                  <div class="login-captcha-img">
+                    <img src="Assets/svg-code-300x100.png" alt="captcha-svg" />
+                  </div>
+                  <button type="button" class="login-password-toggle">
+                    ↻ NEW
+                  </button>
+                </div>
+                <div class="login-input-wrap">
+                  <input
+                    type="text"
+                    id="login-captcha"
+                    name="captcha"
+                    placeholder="Enter the code above"
+                    maxlength="5"
+                  />
+                </div>
+              </div>
+              <div class="login-ride-stage" aria-hidden="true">
+                <span class="login-ride-zzz">Zzz</span>
+                <span class="login-ride">
+                  <span class="login-ride-body">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </span>
+                  <span class="login-ride-wheel left"></span>
+                  <span class="login-ride-wheel right"></span>
+                </span>
+                <span class="login-ride-barrier"></span>
+                <span class="login-ride-status">READY</span>
+                <span class="login-ride-traffic">● ● ●</span>
+              </div>
+              <button type="submit" class="login-submit">
+                <span>LOGIN</span>
+                <b>↗</b>
+              </button>
+              <div class="login-otp-row">
+                <button type="button" class="login-password-toggle">
+                  FORGOT PASSWORD?
+                </button>
+              </div>
+            </form>
+            <div class="login-register">
+              <span>DON'T HAVE AN ACCOUNT?</span>
+              <button type="button">CREATE ACCOUNT →</button>
+            </div>
+          </div>
+          <div class="login-card-footer">
+            <span>AUTH / 2026</span>
+            <span>SECURE LOGIN</span>
+          </div>
+        </section>
+      </main>
+      <footer class="login-bottom">
+        <span>CAMPUSCODE © 2026</span>
+        <span>LEARN · BUILD · COMPETE · SHIP</span>
+        <span>ALL SYSTEMS OPERATIONAL</span>
+      </footer>
+    </div>
+  </body>
+</html>

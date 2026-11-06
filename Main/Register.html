@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CampusCode | Register</title>
+    <link rel="stylesheet" href="./CSS/Register.css" />
+    <link rel="shortcut icon" href="./Assets/image-2.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="Main">
+      <div class="bg-grid"></div>
+      <div class="glow glow-one"></div>
+      <div class="glow glow-two"></div>
+      <div class="bg-decoration"></div>
+
+      <header class="header-nav">
+        <a href="./Main.html" class="logo" aria-label="CampusCode home">
+          <span class="logo-mark"><span></span><span></span><span></span></span>
+          <span class="logo-info"
+            ><strong class="logo-name">CAMPUSCODE</strong
+            ><small class="logo-tagline">HACKATHON ARENA</small></span
+          >
+        </a>
+        <a href="./Main.html" class="register-back">← BACK TO HOME</a>
+      </header>
+
+      <main class="register-main">
+        <section class="right-section">
+          <div class="register-status">
+            <span></span> CAMPUSCODE / REGISTRATION
+          </div>
+          <div class="register-intro-index">
+            <span>CREATE</span><span>02 / 02</span>
+          </div>
+          <h1>JOIN<br />THE<br /><span>ARENA.</span></h1>
+          <p>
+            Create your CampusCode identity and become part of a student
+            ecosystem designed around ideas, teams, technology and competition.
+          </p>
+
+          <div class="info-grid">
+            <article class="info-card featured">
+              <div class="card-top"><span>01</span><span>IDENTITY</span></div>
+              <strong>CREATE</strong>
+              <p>
+                Build your student profile and enter the CampusCode ecosystem.
+              </p>
+              <div class="info-line"><i></i></div>
+            </article>
+            <article class="info-card">
+              <div class="card-top"><span>02</span><span>TEAM</span></div>
+              <strong>COLLABORATE</strong>
+              <p>Find teammates and build projects together.</p>
+            </article>
+            <article class="info-card">
+              <div class="card-top"><span>03</span><span>ARENA</span></div>
+              <strong>COMPETE</strong>
+              <p>Join hackathons and turn ideas into submissions.</p>
+            </article>
+          </div>
+
+          <div class="system-info">
+            <div><span class="dot"></span> REGISTRATION OPEN</div>
+            <div>STUDENT INNOVATION NETWORK</div>
+            <div>2026</div>
+          </div>
+        </section>
+
+        <section class="left-section">
+          <div class="card-header">
+            <div>
+              <span class="label">NEW ACCOUNT</span>
+              <h2>REGISTER</h2>
+              <p>Create your CampusCode account.</p>
+            </div>
+            <div class="card-index">CC<br />02</div>
+          </div>
+          <div class="divider"></div>
+
+          <form class="register-form">
+            <div class="field">
+              <label for="full-name">FULL NAME</label>
+              <div class="input-wrap">
+                <span class="input-icon">◇</span
+                ><input
+                  id="full-name"
+                  name="fullName"
+                  type="text"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">EMAIL ADDRESS</label>
+              <div class="input-wrap">
+                <span class="input-icon">@</span
+                ><input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field account-type">
+              <label for="account-type">ACCOUNT TYPE</label>
+              <div class="input-wrap static-field">
+                <span class="input-icon">🎓</span
+                ><input
+                  id="account-type"
+                  name="accountType"
+                  type="text"
+                  value="STUDENT"
+                  readonly
+                />
+              </div>
+              <p class="note">
+                Organizer? Accounts are created by our team — contact
+                <a href="mailto:campuscode@gmail.com">campuscode@gmail.com</a>
+              </p>
+            </div>
+            <div class="field">
+              <label for="password">PASSWORD</label>
+              <div class="input-wrap">
+                <span class="input-icon">•</span
+                ><input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Create a password"
+                  autocomplete="new-password"
+                  required
+                /><button
+                  type="button"
+                  class="toggle-password"
+                  data-target="password"
+                >
+                  SHOW
+                </button>
+              </div>
+            </div>
+            <div class="field">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <div class="input-wrap">
+                <span class="input-icon">•</span
+                ><input
+                  id="confirm-password"
+                  name="confirmPassword"
+                  type="password"
+                  placeholder="Repeat your password"
+                  autocomplete="new-password"
+                  required
+                /><button
+                  type="button"
+                  class="toggle-password"
+                  data-target="confirm-password"
+                >
+                  SHOW
+                </button>
+              </div>
+            </div>
+            <div class="field captcha-field">
+              <label for="captcha-code">CAPTCHA</label>
+              <div class="captcha-row">
+                <div class="captcha-box">
+                  <img src="./Assets/svg-code-300x100.png" alt="CAPTCHA" />
+                </div>
+                <button type="button" class="captcha-refresh">↻ NEW</button>
+              </div>
+              <input
+                id="captcha-code"
+                name="captcha"
+                type="text"
+                class="captcha-input"
+                placeholder="Enter the code above"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <label class="register-age-check"
+              ><input type="checkbox" name="ageConfirmation" required /><span
+                >I confirm that I am <b>18 years of age or older.</b></span
+              ></label
+            >
+            <button type="submit" class="register-submit">
+              <span class="mini-ride"><i></i><i></i><i></i></span>
+              <span>SEND VERIFICATION CODE</span><b>↗</b>
+            </button>
+          </form>
+
+          <div class="register-card-footer">
+            <span>ALREADY HAVE AN ACCOUNT?</span
+            ><a href="./Login.html">LOGIN →</a>
+          </div>
+        </section>
+
+        <div class="register-security">
+          <span>AUTH / 2026</span><span><i></i> SECURE REGISTRATION</span>
+        </div>
+      </main>
+
+      <footer class="page-footer">
+        <span>CAMPUSCODE © 2026</span><span>LEARN · BUILD · COMPETE · SHIP</span
+        ><span>ALL SYSTEMS OPERATIONAL</span>
+      </footer>
+    </div>
+  </body>
+</html>

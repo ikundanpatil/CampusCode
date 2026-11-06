@@ -1,0 +1,585 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>CampusCode</title>
+    <link href="./Events.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../Main/Assets/image-2.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <div class="student-panel">
+        <div class="student-bg-grid"></div>
+        <div class="student-bg-orb one"></div>
+        <div class="student-bg-orb two"></div>
+        <div class="student-mobile-topbar">
+          <button class="student-menu-button">☰</button>
+          <div class="student-mobile-brand">
+            <span aria-label="CampusCode logo" class="cc-mark cc-mark-small">
+              <span> </span>
+              <span> </span>
+              <span> </span>
+            </span>
+            <div>
+              <strong> CAMPUSCODE </strong>
+              <span> HACKATHON ARENA </span>
+            </div>
+          </div>
+          <div class="student-mobile-avatar">KP</div>
+        </div>
+        <aside class="student-sidebar">
+          <button aria-label="Close sidebar" class="student-sidebar-close">
+            &lsaquo;
+          </button>
+          <div class="student-brand">
+            <span aria-label="CampusCode logo" class="cc-mark">
+              <span> </span>
+              <span> </span>
+              <span> </span>
+            </span>
+            <div>
+              <strong> CAMPUSCODE </strong>
+              <span> HACKATHON ARENA </span>
+            </div>
+          </div>
+          <div class="sidebar-label">WORKSPACE</div>
+          <nav class="student-nav">
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-layout-dashboard"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://ww"
+                >
+                  <rect height="9" rx="1" width="7" x="3" y="3"></rect>
+                  <rect height="5" rx="1" width="7" x="14" y="3"></rect>
+                  <rect height="9" rx="1" width="7" x="14" y="12"></rect>
+                  <rect height="5" rx="1" width="7" x="3" y="16"></rect>
+                </svg>
+              </span>
+              <span> Overview </span>
+            </button>
+            <a href="../Event/Event.html">
+              <button class="student-nav-item" type="button">
+                <span class="student-nav-icon">
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-trophy"
+                    fill="none"
+                    height="16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    viewbox="0 0 24 24"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2"></path>
+                    <path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2"></path>
+                    <path
+                      d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3"
+                    ></path>
+                    <path d="M4 22h16"></path>
+                    <path
+                      d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"
+                    ></path>
+                    <path
+                      d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3"
+                    ></path>
+                  </svg>
+                </span>
+                <span> Events </span>
+              </button>
+            </a>
+            <button class="student-nav-item active" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-clock3 lucide-clock-3"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 6v6h4"></path>
+                </svg>
+              </span>
+              <span> My Events </span>
+              <b> &rarr; </b>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-sparkles"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
+                  ></path>
+                  <path d="M20 2v4"></path>
+                  <path d="M22 4h-4"></path>
+                  <circle cx="4" cy="20" r="2"></circle>
+                </svg>
+              </span>
+              <span> HackMate AI </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-sparkles"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
+                  ></path>
+                  <path d="M20 2v4"></path>
+                  <path d="M22 4h-4"></path>
+                  <circle cx="4" cy="20" r="2"></circle>
+                </svg>
+              </span>
+              <span> IdeaCheck AI </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-award"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                  ></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+                </svg>
+              </span>
+              <span> Certificates </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-id-card"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M16 10h2"></path>
+                  <path d="M16 14h2"></path>
+                  <path d="M6.17 15a3 3 0 0 1 5.66 0"></path>
+                  <circle cx="9" cy="11" r="2"></circle>
+                  <rect height="14" rx="2" width="20" x="2" y="5"></rect>
+                </svg>
+              </span>
+              <span> Digital Card </span>
+            </button>
+            <button class="student-nav-item rulebot-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bot"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 8V4H8"></path>
+                  <rect height="12" rx="2" width="16" x="4" y="8"></rect>
+                  <path d="M2 14h2"></path>
+                  <path d="M20 14h2"></path>
+                  <path d="M15 13v2"></path>
+                  <path d="M9 13v2"></path>
+                </svg>
+              </span>
+              <span> RuleBot AI </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bot"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 8V4H8"></path>
+                  <rect height="12" rx="2" width="16" x="4" y="8"></rect>
+                  <path d="M2 14h2"></path>
+                  <path d="M20 14h2"></path>
+                  <path d="M15 13v2"></path>
+                  <path d="M9 13v2"></path>
+                </svg>
+              </span>
+              <span> Student Guide </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bell"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                  <path
+                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                  ></path>
+                </svg>
+              </span>
+              <span> Official Communication </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bell"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                  <path
+                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                  ></path>
+                </svg>
+              </span>
+              <span> Notifications </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bot"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 8V4H8"></path>
+                  <rect height="12" rx="2" width="16" x="4" y="8"></rect>
+                  <path d="M2 14h2"></path>
+                  <path d="M20 14h2"></path>
+                  <path d="M15 13v2"></path>
+                  <path d="M9 13v2"></path>
+                </svg>
+              </span>
+              <span> Help &amp; Support </span>
+            </button>
+            <button class="student-nav-item" type="button">
+              <span class="student-nav-icon">
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-user"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="10" r="3"></circle>
+                  <path
+                    d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"
+                  ></path>
+                </svg>
+              </span>
+              <span> Profile </span>
+            </button>
+          </nav>
+          <div class="student-sidebar-bottom">
+            <div class="sidebar-label">ACCOUNT</div>
+            <div class="sidebar-user">
+              <div>KP</div>
+              <span>
+                <strong> Kundan Patil </strong>
+                <small> STUDENT </small>
+              </span>
+            </div>
+            <button class="logout-btn" type="button">
+              <span> &rarrhk; </span>
+              LOG OUT
+            </button>
+          </div>
+        </aside>
+        <main class="student-main">
+          <header class="student-topbar">
+            <div>
+              <span> CAMPUSCODE / STUDENT </span>
+              <strong> MY EVENTS </strong>
+            </div>
+            <div class="student-top-actions">
+              <button
+                aria-label="Open notifications"
+                class="student-top-notification"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-bell"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                  <path
+                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                  ></path>
+                </svg>
+                <i> </i>
+              </button>
+              <button
+                aria-label="Refresh current page"
+                class="campus-refresh-button"
+                title="Refresh current page"
+                type="button"
+              >
+                <span class="campus-refresh-icon-wrap">
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-refresh-cw campus-refresh-icon"
+                    fill="none"
+                    height="16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.9"
+                    viewbox="0 0 24 24"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"
+                    ></path>
+                    <path d="M21 3v5h-5"></path>
+                    <path
+                      d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"
+                    ></path>
+                    <path d="M8 16H3v5"></path>
+                  </svg>
+                </span>
+                <span class="campus-refresh-label"> REFRESH </span>
+              </button>
+              <div class="topbar-user">
+                <svg
+                  aria-hidden="true"
+                  class="student-avatar"
+                  height="34"
+                  viewbox="0 0 100 100"
+                  width="34"
+                >
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="46" fill="#e0ac69" r="26"></circle>
+                  <g>
+                    <path
+                      d="M22 36 Q24 10 50 10 Q76 10 78 36 Q60 24 50 30 Q40 24 22 36Z"
+                    ></path>
+                    <circle cx="50" cy="12" r="7"></circle>
+                  </g>
+                  <circle cx="41" cy="46" fill="#1c1c1c" r="3.4"></circle>
+                  <circle cx="59" cy="46" fill="#1c1c1c" r="3.4"></circle>
+                  <circle cx="42" cy="45" fill="#fff" r="1.1"></circle>
+                  <circle cx="60" cy="45" fill="#fff" r="1.1"></circle>
+                  <path
+                    d="M44 56 Q50 58 56 56"
+                    fill="none"
+                    stroke="#1c1c1c"
+                    stroke-linecap="round"
+                    stroke-width="2.4"
+                  ></path>
+                  <ellipse
+                    cx="35"
+                    cy="53"
+                    fill="#ff9d9d"
+                    opacity=".55"
+                    rx="4"
+                    ry="2.6"
+                  ></ellipse>
+                  <ellipse
+                    cx="65"
+                    cy="53"
+                    fill="#ff9d9d"
+                    opacity=".55"
+                    rx="4"
+                    ry="2.6"
+                  ></ellipse>
+                  <path
+                    d="M34 78 Q50 70 66 78 L64 100 L36 100Z"
+                    fill="#7c5cff"
+                  ></path>
+                </svg>
+                <span> Kundan Patil </span>
+              </div>
+            </div>
+          </header>
+          <div class="student-content">
+            <div class="student-view">
+              <section>
+                <div class="student-page-heading">
+                  <div>
+                    <span> MY ACTIVITY / BACKEND DATA </span>
+                    <h1>MY EVENTS.</h1>
+                    <p>
+                      Every event you joined, in one place. Open one to see its
+                      rounds, team, results and certificates.
+                    </p>
+                  </div>
+                  <div class="student-counter">
+                    <strong> 01 </strong>
+                    <span> LIVE DATA </span>
+                  </div>
+                </div>
+                <div class="registration-grid">
+                  <article class="registration-card">
+                    <div class="event-banner">
+                      <img
+                        alt="ReBuild '26 banner"
+                        class="event-banner-web"
+                        height="153"
+                        loading="lazy"
+                        src="../Main/Assets/image-1.png"
+                        width="528"
+                      />
+                      <img
+                        alt="ReBuild '26 banner"
+                        class="event-banner-mobile"
+                        height="0"
+                        loading="lazy"
+                        src="assets/asset-016.png"
+                        width="0"
+                      />
+                    </div>
+                    <div>
+                      <span> REGISTRATION </span>
+                      <b> ea5ac176-8e43-4649-ba62-d0cf0b465b22 </b>
+                    </div>
+                    <div class="hackathon-card-brand">
+                      <span
+                        aria-hidden="true"
+                        class="hack-mark"
+                        style="
+                          width: 54px;
+                          height: 54px;
+                          font-size: 18px;
+                          background: linear-gradient(
+                            135deg,
+                            rgb(167, 243, 122),
+                            rgb(76, 122, 18)
+                          );
+                        "
+                      >
+                        RE
+                      </span>
+                      <h2>ReBuild '26</h2>
+                    </div>
+                    <p>
+                      STATUS:
+                      <strong> REGISTERED </strong>
+                    </p>
+                    <p>
+                      TEAM:
+                      <strong> Team Hello World </strong>
+                    </p>
+                    <button class="student-primary-btn">
+                      OPEN JOURNEY &nearrow;
+                    </button>
+                  </article>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
